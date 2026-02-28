@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15
+    container_name: annapulse_db
+    restart: always
+    environment:
+      POSTGRES_USER: annapulse
+      POSTGRES_PASSWORD: annapulse123
+      POSTGRES_DB: annapulse_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
