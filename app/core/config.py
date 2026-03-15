@@ -1,0 +1,15 @@
+import os
+from dotenv import load_dotenv
+
+
+
+#THESE WE WILL GET FROM RAZORPAY DASHBOARD
+# RAZORPAY_KEY_ID = "YOUR KEY ID"
+# RAZORPAY_KEY_SECRET = "YOUR SECRET"
+
+load_dotenv()
+DATABASE_URL = os.getenv("DATABASE_URL")
+JWT_SECRET = os.getenv("JWT_SECRET")
+RAZORPAY_KEY_ID = os.getenv("RAZORPAY_KEY_ID")
+RAZORPAY_KEY_SECRET = os.getenv("RAZORPAY_KEY_SECRET")
+
